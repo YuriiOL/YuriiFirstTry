@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="addFont.css" />
+  <script src="script.js" defer></script>
+  <title>Constructor</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="first_elem" id="first_div">
+      <p>1</p><a>Изображение</a>
+    </div>
+    <div class="second_elem" id="second_div">
+      <p>2</p><a>Рама</a>
+    </div>
+    <div class="third_elem" id="third_div">
+      <p>3</p><a>Заголовок</a>
+    </div>
+    <div class="fourth_elem" id="fourth_div">
+      <p>4</p><a>Цвет отпечатков</a>
+    </div>
+    <div class="fifth_elem">
+      <p>Ваша картина</p>
+    </div>
+  </div>
+  <div class="wrapper">
+    <!-- Div with pictures  ============================ -->
+    <div class="content" id="showFirstDiv">
+      <p id="textUp">Выберите изображение</p>
+
+      <p id="textLow">для начала выберите основу, саму картину, на которую вы и гости вашего праздника будете наносить
+        отпечатки пальцев
+        с пожеланиями
+
+      <div class="scrollPictures">
+        <img src="./img/pics/01.jpg" alt="1" id="pictureOne">
+        <img src="./img/pics/02.jpg" alt="2" id="pictureTwo">
+        <img src="./img/pics/03.jpg" alt="3" id="pictureThree">
+        <img src="./img/pics/04.jpg" alt="4" id="pictureFour">
+        <img src="./img/pics/05.jpg" alt="5" id="pictureFive">
+        <img src="./img/pics/06.jpg" alt="6" id="pictureSix">
+        <img src="./img/pics/07.jpg" alt="7" id="pictureSeven">
+        <img src="./img/pics/08.jpg" alt="8" id="pictureEight">
+        <img src="./img/pics/09.jpg" alt="9" id="pictureNine">
+        <img src="./img/pics/10.jpg" alt="10" id="pictureTen">
+        <img src="./img/pics/11.jpg" alt="11" id="pictureEleven">
+      </div>
+
+    </div>
+    <div class="footer">
+      <div class="howMuch">
+        <p>Стоимость:</p>
+        <span id="priceOfPicture">
+        </span>
+        <div class="grn">грн</div>
+
+      </div>
+    </div>
+    <!-- DIV with Borders ============================= -->
+    <div class="content2" id="showSecondDiv">
+      <p id="textUp">Рама</p>
+
+      <p id="textLow">Подберите раму, которая подойдет случаю и впишется в интерьер, ведь вы же не просто оставляете
+        "пальчики", а создаете предмет декора для дома и офиса:</p>
+
+      <div class="scrollPictures">
+        <img src="./img/borders/rama-01.png" alt="1" id="borderOne">
+        <img src="./img/borders/rama-02.png" alt="2" id="borderTwo">
+        <img src="./img/borders/rama-03.png" alt="3" id="borderThree">
+        <img src="./img/borders/rama-04.png" alt="4" id="borderFour">
+        <img src="./img/borders/rama-05.png" alt="5" id="borderFive">
+        <img src="./img/borders/rama-06.png" alt="6" id="borderSix">
+        <img src="./img/borders/rama-07.png" alt="7" id="borderSeven">
+        <img src="./img/borders/rama-08.png" alt="8" id="borderEight">
+        <img src="./img/borders/rama-09.png" alt="9" id="borderNine">
+        <img src="./img/borders/rama-10.png" alt="10" id="borderTen">
+        <img src="./img/borders/rama-11.png" alt="11" id="borderEleven">
+        <img src="./img/borders/rama-12.png" alt="11" id="borderTwelve">
+        <img src="./img/borders/rama-13.png" alt="11" id="borderThirteen">
+        <img src="./img/borders/rama-14.png" alt="11" id="borderFourteen">
+        <img src="./img/borders/rama-15.png" alt="11" id="borderFifteen">
+      </div>
+
+    </div>
+    <!-- DIV with add Text ================================ -->
+    <div class="content3" id="showThirdDiv">
+      <p id="textUp">Заголовок</p>
+
+      <p id="textLow">персонализируйте ваше "Дерево пожеланий", вверху и в низу картины есть спецыальне поля которые
+        можно заполнить по вашему усмотрению: вписать имена виновников торжества, или особые пожелания, добавить дату,
+        или логотип компании, если речь идьот о корпоративном порядке.</p>
+      <p id="input1"><input type="text" id="inp1" placeholder="Наша свадьба"> Заголовок картины</p>
+      <p id="input2"><input type="text" id="inp2" placeholder="Анастасия и Константин"> Подпись</p>
+      <p id="input3"><input type="text" id="inp3" placeholder="29 июля 2015"> Дата события</p>
+      <p id="FontHeader">Шрифт</p>
+      <button id="Font1" onclick="showText1()">Ariston</button>
+      <button id="Font2" onclick="showText2()">DaVinci</button>
+      <button id="Font3" onclick="showText3()">Brody</button>
+    </div>
+    <!-- DIV with fingerPrint========================== -->
+    <div class="content4" id="showFourthDiv">
+      <p id="textUp">Цвет отпечатков</p>
+
+      <p id="textLow">наконец, подберите самые подходящие цвета красок, с помощью которых вы и оставите на картине свой
+        след на память!</p>
+      <div class="colorOfFingerprint">
+        <img src="./img/marks/orig/BahamaBlue.jpg" alt="1" id="color1" onclick="creatorfunction1()">
+        <img src="./img/marks/orig/BambooLeaves.jpg" alt="2" id="color2" onclick="creatorfunction2()">
+        <img src="./img/marks/CottageIvy.jpg" alt="3" id="color3" onclick="creatorfunction3()">
+        <img src="./img/marks/orig/LilacPosies.jpg" alt="4" id="color4" onclick="creatorfunction4()">
+        <img src="./img/marks/orig/PearTart.jpg" alt="5" id="color5" onclick="creatorfunction5()">
+        <img src="./img/marks/orig/Potter`sClay.jpg" alt="6" id="color6" onclick="creatorfunction6()">
+        <img src="./img/marks/orig/RhubarbStalk.jpg" alt="7" id="color7" onclick="creatorfunction7()">
+        <img src="./img/marks/orig/Tangelo.jpg" alt="8" id="color8" onclick="creatorfunction8()">
+
+      </div>
+    </div>
+
+    <!-- Side bar======================================= -->
+    <div class="sidebar">
+      <div class="sideText">
+        <p id="pictChose">Изображение: Не выбрано</p>
+        <p id="bordChose">Рама: Не выбрано</p>
+        <p id="printChose">Отпечатки: Не выбрано
+        <div class="littelBox1" id="littelBoxColor1"></div>
+        <div class="littelBox2" id="littelBoxColor2"></div>
+        <div class="littelBox3" id="littelBoxColor3"></div>
+        <div class="littelBox4" id="littelBoxColor4"></div>
+        <div class="littelBox5" id="littelBoxColor5"></div>
+        <div class="littelBox6" id="littelBoxColor6"></div>
+        <div class="littelBox7" id="littelBoxColor7"></div>
+        <div class="littelBox8" id="littelBoxColor8"></div>
+        </p>
+
+
+      </div>
+
+      <div class="selectedPicture" id="bordderImg">
+        <div id="showImg" class="imgBox">
+          <div class="textOnImg1" id="textOnImge1"></div>
+          <div class="textOnImg2" id="textOnImge2"></div>
+          <div class="textOnImg3" id="textOnImge3"></div>
+        </div>
+
+      </div>
+      <button class="buttonNext1" id="buttonNext1" onclick="nextPage1()">ДАЛЕЕ</button>
+      <button class="buttonNext2" id="buttonNext2" onclick="nextPage2()">ДАЛЕЕ</button>
+      <button class="buttonNext3" id="buttonNext3" onclick="nextPage3()">ДАЛЕЕ</button>
+      <button class="buttonNext4" id="buttonNext4" onclick="nextPage4()">В КОРЗИНУ</button>
+
+
+
+    </div>
+</body>
+
+</html>

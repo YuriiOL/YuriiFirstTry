@@ -1,0 +1,501 @@
+
+/* Top menu ======================================= */
+
+.header {
+  background-color: white;
+  width: 939px;
+  margin-top: 20px;
+  border: 1px solid gainsboro;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 300px;
+  grid-auto-rows: 60px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 12px;
+  color: hsl(0, 0%, 67%);
+}
+
+
+.first_elem {
+  margin-top: 15px;
+  border-right: 1px solid gainsboro;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: black;
+}
+.first_elem > p {
+  margin-top: 7px;
+  float: left;
+  font-size: large;
+  margin-left: 20px;
+}
+.first_elem > a {
+  margin-top: 13px;
+  float: left;
+  margin-left: 10px;
+}
+.second_elem {
+  margin-top: 15px;
+  border-right: 1px solid gainsboro;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.second_elem > p {
+  margin-top: 7px;
+  float: left;
+  font-size: large;
+  margin-left: 20px;
+}
+.second_elem > a {
+  margin-top: 13px;
+  float: left;
+  margin-left: 10px;
+}
+.third_elem {
+  margin-top: 15px;
+  border-right: 1px solid gainsboro;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.third_elem > p {
+  margin-top: 7px;
+  float: left;
+  font-size: large;
+  margin-left: 20px;
+}
+.third_elem > a {
+  margin-top: 13px;
+  float: left;
+  
+  margin-left: 10px;
+}
+.fourth_elem {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.fourth_elem > p {
+  margin-top: 7px;
+  float: left;
+  font-size: large;
+  margin-left: 20px;
+}
+.fourth_elem > a {
+  margin-top: 13px;
+  float: left;
+  margin-left: 10px;
+}
+
+.fifth_elem {
+  border-left: 1px solid gainsboro;
+  font-size: 18px;
+  background-color: rgb(216, 212, 212);
+  opacity: 0.6;
+  border-top-right-radius: 10px;
+  height: 61px;
+  
+  
+  
+}
+
+.fifth_elem > p {
+  margin-left: 27px;
+  margin-top: 24px;
+  color: black;
+  
+}
+
+/* Wrapper */
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 640px  301px;
+  grid-template-rows: 540px;
+}
+
+/* Main box with content ============================= */
+
+.content {
+  background-color: white;
+  position: relative;
+  border-left: 1px solid gainsboro;
+  border-bottom-left-radius: 10px;
+  display: block;
+}
+
+#textUp{
+  margin-left: 30px;
+  font-size: 24px;
+  margin-top: 42px;
+  margin-bottom: -6px;
+  color: rgb(90, 63, 24);
+  opacity: 0.8;
+  
+  
+}
+
+#textLow{
+  font-size: 14px;
+  margin-left: 30px;
+  color: rgb(90, 63, 24);
+  opacity: 0.8;
+  margin-right: 30px;
+  line-height: 1.6;
+}
+.scrollPictures{
+  margin-left:20px;
+  overflow-y: scroll; 
+  width:  585px; 
+  height: 307px;
+  padding: 5px;
+  
+}
+img{
+  width: 175px;
+  height: 203px;
+  border: 1px solid gainsboro;
+  margin: 3px;
+  margin-top: 0px;
+  border-radius: 10px
+}
+img:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* 2 Main box content =================================*/
+.content2{
+  background-color: white;
+  position: relative;
+  border-left: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  display: none;
+  height: 455px;
+}
+/* 3 Main box content ================================= */
+.content3{
+  background-color: white;
+  position: relative;
+  border-left: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;;
+  display: none;
+  height: 455px;
+}
+input{
+  border-radius: 15px;
+  height: 35px;
+  width: 200px;
+  border: 1px solid gainsboro;
+  margin-left: 20px;
+  padding-left: 20px;
+  outline: none;
+  margin-right: 10px;
+  
+}
+#input1{
+  margin-top: 30px;
+  color:rgb(90, 63, 24) ;
+}
+#input2{
+  color:rgb(90, 63, 24);
+}
+#input3{
+  color: rgb(90, 63, 24);
+}
+.content3 > button{
+  width: 90px;
+  height: 35px;  
+  color:rgb(124, 187, 30);
+  background-color: white;
+  border: 1px solid rgb(125, 189, 31);
+  border-radius: 20px;
+  outline: none !important;
+  font-family:  'Times New Roman';
+  font-size: 19px;
+  opacity: 0.6;
+  margin-top: -25px;
+  margin-left: 5px;
+}
+#Font1{
+  margin-left: 20px;
+}
+
+#FontHeader{
+  font-size: 19px;
+  margin-left: 34px;
+  color: rgb(90, 63, 24);
+  opacity: 0.8;
+}
+
+/* 4 Main box content ================================= */
+.content4{
+  background-color: white;
+  position: relative;
+  border-left: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;;
+  display: none;
+  height: 455px;
+}
+.colorOfFingerprint > img {
+  width: 140px;
+  height: 140px;
+  border: 1px solid gainsboro;
+  margin: 3px;
+  margin-top: 0px;
+  border-radius: 10px;
+}
+.colorOfFingerprint{
+  margin-left: 20px;
+}
+
+
+/* Right box with result ============================= */
+
+.sidebar {
+  border-left: 1px solid gainsboro;
+  background-color: rgb(226, 225, 225);
+  border-bottom-right-radius: 10px;  
+}
+.sideText{
+  margin-top: 38px;
+  margin-left: 20px;
+  color: rgb(90, 63, 24);;
+  opacity: 0.7;
+}
+.sideText > p {
+  margin: 10px;
+}
+
+.selectedPicture{
+  width: 240px;
+  height: 299px;
+  background-color: white;
+  margin-left: 30px;
+  margin-top: 37px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  overflow: auto;
+}
+
+.imgBox{
+  margin-top: 33px;
+  margin-left: 30px;
+  background-size: cover;
+  height: 225px;
+  width:180px;
+  
+}
+
+.buttonNext1{
+  width: 240px;
+  height: 50px;  
+  margin-left: 30px;
+  margin-top: 26px;
+  background-color:rgb(124, 187, 30);
+  color: white;
+  border-radius: 20px;
+  outline: none !important;
+  border: 1px;
+  font-family:  'Times New Roman';
+  font-size: 19px;
+  opacity: 0.6;
+
+}
+.buttonNext2{
+  width: 240px;
+  height: 50px;  
+  margin-left: 30px;
+  margin-top: 26px;
+  background-color:rgb(124, 187, 30);
+  color: white;
+  border-radius: 20px;
+  outline: none !important;
+  border: 1px;
+  font-family:  'Times New Roman';
+  font-size: 19px;
+  opacity: 0.6;
+  display: none;
+
+}
+.buttonNext3{
+  width: 240px;
+  height: 50px;  
+  margin-left: 30px;
+  margin-top: 26px;
+  background-color:rgb(124, 187, 30);
+  color: white;
+  border-radius: 20px;
+  outline: none !important;
+  border: 1px;
+  font-family:  'Times New Roman';
+  font-size: 19px;
+  opacity: 0.6;
+  display: none;
+}
+.buttonNext4{
+  width: 240px;
+  height: 50px;  
+  margin-left: 30px;
+  margin-top: 26px;
+  background-color:rgb(124, 187, 30);
+  color: white;
+  border-radius: 20px;
+  outline: none !important;
+  border: 1px;
+  font-family:  'Times New Roman';
+  font-size: 19px;
+  opacity: 0.6;
+  display: none;
+}
+
+.textOnImg1{
+  margin-left: 15px;
+  margin-top: 20px;
+  overflow: hidden;
+  float: left;
+  color:rgb(90, 63, 24);
+  font-size: 15px;
+  opacity: 0.7;
+  text-align: center;
+  width: 150px;
+  
+}
+
+.textOnImg2{
+  margin-left: 15px;
+  overflow: hidden;
+  float: left;
+  margin-top: 145px;
+  color: rgb(90, 63, 24);
+  font-size: 15px;
+  opacity: 0.7;
+  text-align: center; 
+  width: 150px;
+}
+.textOnImg3{
+  margin-left: 15px;
+  overflow: hidden;
+  float: left;
+  margin-top: 5px;
+  color: rgb(90, 63, 24);
+  font-size: 15px;
+  opacity: 0.7;
+  text-align: center;
+  width: 150px;
+}
+.littelBox1{
+  height: 12px;
+  width: 12px;
+  background-color:blue;
+  float: left;
+  margin: 3px;
+  display: none;
+}
+.littelBox2{
+  height: 12px;
+  width: 12px;
+  background-color:rgb(103, 206, 7);
+  float: left;
+  margin: 3px;
+  display: none;
+}
+.littelBox3{
+  height: 12px;
+  width: 12px;
+  background-color:rgb(3, 175, 26);
+  float: left;
+  margin: 3px;
+  display: none;
+}
+.littelBox4{
+  height: 12px;
+  width: 12px;
+  background-color:rgb(212, 0, 184);
+  float: left;
+  margin: 3px;
+  display: none;
+}
+.littelBox5{
+  height: 12px;
+  width: 12px;
+  background-color:rgb(217, 255, 1);
+  float: left;
+  margin: 3px;
+  display: none;
+}
+.littelBox6{
+  height: 12px;
+  width: 12px;
+  background-color:rgb(175, 99, 0);
+  float: left;
+  margin: 3px;
+  display: none;
+}
+.littelBox7{
+  height: 12px;
+  width: 12px;
+  background-color:rgb(218, 18, 68);
+  float: left;
+  margin: 3px;
+  display: none;
+}
+.littelBox8{
+  height: 12px;
+  width: 12px;
+  background-color:rgb(255, 145, 0);
+  float: left;
+  margin: 3px;
+  display: none;
+}
+.backraundColor{
+  background-color: blue;
+  height: 12px;
+  width: 12px;
+  float: left;
+  margin-left: 2px;
+}
+#printChose{
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+/* Footer with price ================================= */
+
+.footer {
+  background-color: white;
+  position: absolute;
+  top: 537px;
+  left: 8px;
+  border: 1px solid gainsboro;
+  height: 83px;
+  border-bottom-left-radius: 10px;
+}
+.howMuch{
+  margin-top: 10px;
+  width: 638px;
+  height: 70px;
+  float: right;
+  position: relative;
+}
+.howMuch > p{
+  position: absolute;
+  bottom: 0px;
+  color: rgb(90, 63, 24);
+  margin-left: 390px;
+  
+}
+.howMuch >span{
+  float: center;
+  color: rgb(124, 187, 30);
+  font-size: 55px;
+  margin-left: 490px;
+  
+}
+.grn{
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  color: rgb(124, 187, 30);
+  font-size: 18px;
+}
